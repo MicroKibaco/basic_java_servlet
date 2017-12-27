@@ -15,7 +15,7 @@ public class HelloServlet extends HttpServlet {
         System.out.println("处理Get()请求....");
         PrintWriter out = response.getWriter();
         response.setContentType("text/html;charset=utf-8");
-        out.print("<br><strong>Hello Servlet</strong></br>");
+        out.print("<br><strong>处理Get()请求</strong></br>");
     }
 
     @Override
@@ -23,6 +23,16 @@ public class HelloServlet extends HttpServlet {
         System.out.println("处理Post()请求....");
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html;charset=utf-8");
-        out.print("<br><strong>Hello Servlet1</strong></br>");
+        out.print("<br><strong>处理Post()请求</strong></br>");
+    }
+
+    @Override
+    public void init() throws ServletException {
+        super.init();
+    }
+
+    @Override
+    public void destroy() {
+
     }
 }

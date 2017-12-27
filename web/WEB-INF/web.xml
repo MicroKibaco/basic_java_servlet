@@ -4,12 +4,31 @@
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <display-name>BBOSS-MVC</display-name>
 
-<servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>servlet.HelloServlet</servlet-class>
-</servlet>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>servlet.HelloServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/servlet/HelloServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <servlet-class>servlet.ServletLifeCycle</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLifeCycle</servlet-name>
+        <url-pattern>/servlet/ServletLifeCycle</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>CustomServletLifeCycle</servlet-name>
+        <servlet-class>servlet.CustomServletLifeCycle</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomServletLifeCycle</servlet-name>
+        <url-pattern>/servlet/CustomServletLifeCycle</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -17,5 +17,13 @@
   <form action="servlet/HelloServlet" method="post">
     <input type="submit" value="Post方式请求HelloServlet"/>
   </form>
+  <a href="servlet/ServletLifeCycle">Get方式请求ServletLifeCycle</a><br>
+  <form action="servlet/HelloServlet" method="post">
+    <input type="submit" value="Post方式请求ServletLifeCycle"/>
+  </form>
+  <a href="servlet/CustomServletLifeCycle">Get方式请求CustomServletLifeCycle</a><br>
+  <form action="servlet/CustomServletLifeCycle" method="post">
+    <input type="submit" value="Post方式请求CustomServletLifeCycle"/>
+  </form>
   </body>
 </html>
