@@ -29,12 +29,28 @@ Tomcat容器分为四个等级,Servlet的容器管理Context容器,一个Context
 一.Servlet容器启动时装载某些Servlet,实现它只需要在web.xml文件中<servlet></servlet> 之间添加如下代码:<load-on-startup>1</load-on-startup>
 数字越小,表示优先级别越高
 二.在Servlet容器启动后,客户端首次向Servlet发送请求
-三.Servlet类文件b被更新后,重新装载Servlet
+三.Servlet类文件被更新后,重新装载Servlet
 四.Servlet被装载后,Servlet容器创建一个Servlets实例并调用Servlet的init()方法进行初始化.在整个Servlet生命周期中,init()只会被调用一次
 ```
 3. 服务和销毁,调用destory()方法
 ![lifecircle](./images/servlet-lifecircle.png)
 #### 6.servlet获取九大内置对象
+ 
+jSP对象     | 怎样获得
+-------- | ---
+out | rsp.getWriter
+request    | Service方法中的req参数
+response     | Service方法中的resp参数
+session     | resp.getSession()函数
+application     | getServletContext()函数
+exception     | Throwable
+page     | this
+pageContext     | pageContext
+Config     | getServletConfig
+
+
 #### 7.servlet与表单
+> servlet如何获取表单数据?reg.jsp
+                  userinfo.jsp
 #### 8.servlet路径跳转
 #### 9.project

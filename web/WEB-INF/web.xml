@@ -31,4 +31,14 @@
         <servlet-name>CustomServletLifeCycle</servlet-name>
         <url-pattern>/servlet/CustomServletLifeCycle</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>servlet.RegServlet</servlet-class>
+        <load-on-startup>4</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/servlet/RegServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
