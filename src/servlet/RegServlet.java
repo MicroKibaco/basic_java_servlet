@@ -43,7 +43,7 @@ public class RegServlet extends HttpServlet {
             introduce = req.getParameter("introduce");
             birthday = sdf.parse(req.getParameter("birthday"));
             favorites = req.getParameterValues("favorite");// 用来获取多个复选按钮的值
-            isAccept = "true".equals(req.getParameter("isAccept")) ? true : false;
+            isAccept = "true".equals(req.getParameter("flag")) ? true : false;
 
             u.setUsername(username);
             u.setMypassword(mypassword);
@@ -52,7 +52,7 @@ public class RegServlet extends HttpServlet {
             u.setIntroduce(introduce);
             u.setBirthday(birthday);
             u.setFavorites(favorites);
-            u.setAccept(isAccept);
+            u.setFlag(isAccept);
             // 把注册成功的用户对象保存在session中
             req.getSession().setAttribute("regUser", u);
             // 跳转到注册成功的页面

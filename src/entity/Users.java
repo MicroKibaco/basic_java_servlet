@@ -11,7 +11,7 @@ public class Users {
     private Date birthday; // 出生日期
     private String[] favorites; // 爱好
     private String introduce; // 自我介绍
-    private boolean isAccept; // 是否接收协议
+    private boolean flag; // 是否接收协议
 
     public Users() {
     }
@@ -72,11 +72,11 @@ public class Users {
         this.introduce = introduce;
     }
 
-    public boolean isAccept() {
-        return isAccept;
+    public boolean isFlag() {
+        return flag;
     }
 
-    public void setAccept(boolean accept) {
-        isAccept = accept;
+    public void setFlag(boolean flag) {
+        this.flag = flag;
     }
 }
