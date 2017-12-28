@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bbossgroups.boot:bboot-web:5.0.3.8.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bbossgroups.boot/bboot-web/5.0.3.8.0/1c9f39a25a162fba7e893307ca16c2b2445df2cd/bboot-web-5.0.3.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.bbossgroups.boot/bboot-web/5.0.3.8.0/80ce477cb2dacb13e045b0811d98acdd5f422f59/bboot-web-5.0.3.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

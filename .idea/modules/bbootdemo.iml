@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="bbootdemo" external.linked.project.path="/Asiainfo/bbossgroups/bbootdemo" external.root.project.path="/Asiainfo/bbossgroups/bbootdemo" external.system.id="GRADLE" external.system.module.group="com.bbossgroups.demo" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file:///Asiainfo/bbossgroups/bbootdemo">
+      <excludeFolder url="file:///Asiainfo/bbossgroups/bbootdemo/.gradle" />
+      <excludeFolder url="file:///Asiainfo/bbossgroups/bbootdemo/build" />
+      <excludeFolder url="file:///Asiainfo/bbossgroups/bbootdemo/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="bbootdemo:test" external.linked.project.path="/Asiainfo/bbossgroups/bbootdemo" external.root.project.path="/Asiainfo/bbossgroups/bbootdemo" external.system.id="GRADLE" external.system.module.group="com.bbossgroups.demo" external.system.module.type="sourceSet" external.system.module.version="1.0.0" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7">
+    <output-test url="file:///Asiainfo/bbossgroups/bbootdemo/out/test/classes" />
+    <exclude-output />
+    <content url="file:///Asiainfo/bbossgroups/bbootdemo/src/test">
+      <sourceFolder url="file:///Asiainfo/bbossgroups/bbootdemo/src/test/java" isTestSource="true" />
+      <sourceFolder url="file:///Asiainfo/bbossgroups/bbootdemo/src/test/java" type="java-test-resource" />
+      <sourceFolder url="file:///Asiainfo/bbossgroups/bbootdemo/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="bbootdemo_main" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Asiainfo/bbossgroups/bbootdemo/lib/jdbc/ojdbc14.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar:///Asiainfo/bbossgroups/bbootdemo/lib/cxf/cxf-core-3.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: com.bbossgroups.boot:bboot-web:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: junit:junit:4.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-mvc:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-event:5.0.3.8.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: com.bbossgroups:bboss-rt:5.0.3.7.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-log4j12:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-util:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-data:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-core:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-persistent:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-velocity:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups.security:bboss-security:5.0.3.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups.security:bboss-ticket:5.0.3.7.3" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-soa:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups.rpc:bboss-rpc:5.0.2" level="project" />
+    <orderEntry type="library" name="Gradle: oro:oro:2.0.8" level="project" />
+    <orderEntry type="library" name="Gradle: commons-lang:commons-lang:2.6" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:apache-jsp:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-annotations:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-commons:6.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm-tree:6.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.ow2.asm:asm:6.0" level="project" />
+    <orderEntry type="library" name="Gradle: cglib:cglib-nodep:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-collections:commons-collections:3.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.uuid:java-uuid-generator:3.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-taglib:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: com.bbossgroups:bboss-htmlparser:5.0.3.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: commons-fileupload:commons-fileupload:1.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: commons-io:commons-io:2.4" level="project" />
+    <orderEntry type="library" name="Gradle: jstl:jstl:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet.jsp:javax.servlet.jsp-api:2.3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-plus:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-webapp:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlet:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-server:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-jmx:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-servlets:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:apache-jstl:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: xml-resolver:xml-resolver:1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.xmlbeans:xmlbeans:2.4.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.ws.xmlschema:xmlschema-core:2.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-bindings-soap:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-databinding-jaxb:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-frontend-jaxws:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-frontend-simple:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-transports-http:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.cxf:cxf-rt-wsdl:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.geronimo.specs:geronimo-jaxws_2.2_spec:1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.geronimo.specs:geronimo-jms_1.1_spec:1.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: javax.ws.rs:javax.ws.rs-api:2.0-m10" level="project" />
+    <orderEntry type="library" name="Gradle: javax.xml.bind:jaxb-api:2.2.12" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-core:2.2.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.sun.xml.bind:jaxb-xjc:2.2.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.neethi:neethi:3.0.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.woodstox:stax2-api:3.1.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.codehaus.woodstox:woodstox-core-asl:4.2.0" level="project" />
+    <orderEntry type="library" name="Gradle: wsdl4j:wsdl4j:1.6.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.jasypt:jasypt:1.9.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.hamcrest:hamcrest-core:1.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Gradle: log4j:log4j:1.2.17" level="project" />
+    <orderEntry type="library" name="Gradle: commons-beanutils:commons-beanutils:1.8.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.jgroups:jgroups:4.0.1.Final" level="project" />
+    <orderEntry type="library" name="Gradle: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-http:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-xml:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-jndi:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-continuation:9.4.8.v20171121" level="project" />
+    <orderEntry type="library" name="Gradle: org.mortbay.jasper:apache-jsp:8.5.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jetty.toolchain:jetty-schemas:3.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.taglibs:taglibs-standard-spec:1.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.taglibs:taglibs-standard-impl:1.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.mortbay.jasper:apache-el:8.5.23" level="project" />
+    <orderEntry type="library" name="Gradle: org.eclipse.jdt:ecj:3.12.3" level="project" />
+    <orderEntry type="library" name="Gradle: javax.annotation:javax.annotation-api:1.2" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="bbootdemo_main" />
+</module>

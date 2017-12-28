@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.bbossgroups:bboss-rt:5.0.3.8.0">
+    <CLASSES>
+      <root url="jar:///Library/Develop/maven-repo/com/bbossgroups/bboss-rt/5.0.3.8.0/bboss-rt-5.0.3.8.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar:///Library/Develop/maven-repo/com/bbossgroups/bboss-rt/5.0.3.8.0/bboss-rt-5.0.3.8.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

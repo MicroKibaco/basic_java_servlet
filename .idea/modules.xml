@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/basic_java_servlet.iml" filepath="$PROJECT_DIR$/basic_java_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic_java_servlet_main.iml" filepath="$PROJECT_DIR$/.idea/modules/basic_java_servlet_main.iml" group="basic_java_servlet" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/basic_java_servlet_test.iml" filepath="$PROJECT_DIR$/.idea/modules/basic_java_servlet_test.iml" group="basic_java_servlet" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bbootdemo.iml" filepath="$PROJECT_DIR$/.idea/modules/bbootdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bbootdemo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/bbootdemo_main.iml" group="bbootdemo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bbootdemo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/bbootdemo_test.iml" group="bbootdemo" />
+    </modules>
+  </component>
+</project>

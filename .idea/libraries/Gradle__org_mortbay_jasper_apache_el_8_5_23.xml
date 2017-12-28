@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.mortbay.jasper:apache-el:8.5.23">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jasper/apache-el/8.5.23/e02a0bea95629a7219b3f7b05872897016259fa8/apache-el-8.5.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mortbay.jasper/apache-el/8.5.23/b7285eaa85174515fb0f4f11c7f89b95a681080d/apache-el-8.5.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
