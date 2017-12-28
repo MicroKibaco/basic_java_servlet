@@ -53,4 +53,8 @@ Config     | getServletConfig
 > servlet如何获取表单数据?reg.jsp
                   userinfo.jsp
 #### 8.servlet路径跳转
+- **绝对路径:** 放之四海皆标准的路径
+- **相对路径:** 相对于当前资源的路径
 #### 9.project
+##### 使用servlet实现用户登录的小案例
+> 用户名admin,密码admin.登陆成功使用服务器内部转发到login_success.jsp页面,并且提示登录成功的用户名,如果登录失败,则请求重定向到login_failure.jsp页面

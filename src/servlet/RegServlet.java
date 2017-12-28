@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -43,7 +44,8 @@ public class RegServlet extends HttpServlet {
             introduce = req.getParameter("introduce");
             birthday = sdf.parse(req.getParameter("birthday"));
             favorites = req.getParameterValues("favorite");// 用来获取多个复选按钮的值
-            isAccept = "true".equals(req.getParameter("flag")) ? true : false;
+            String flag = req.getParameterValues("flag") != null ? req.getParameter("flag") : "false";
+            isAccept = "true".equals(flag) ? true : false;
 
             u.setUsername(username);
             u.setMypassword(mypassword);
@@ -56,7 +58,13 @@ public class RegServlet extends HttpServlet {
             // 把注册成功的用户对象保存在session中
             req.getSession().setAttribute("regUser", u);
             // 跳转到注册成功的页面
-            req.getRequestDispatcher("../userinfo.jsp").forward(req, resp);
+            if (req.getParameterValues("flag") != null){
+                req.getRequestDispatcher("../userinfo.jsp").forward(req, resp);
+            }else {
+                PrintWriter out = resp.getWriter();
+                resp.setContentType("text/html;charset=utf-8");
+                out.print("<br><strong>I'm sorry, you do not agree to the registration agreement, registration failed</strong></br>");
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
