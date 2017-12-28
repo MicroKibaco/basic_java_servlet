@@ -1,5 +1,3 @@
-
-
 configure(allprojects) { project ->
 	group = PROJ_GROUP
 	version = PROJ_VERSION
@@ -10,7 +8,7 @@ configure(allprojects) { project ->
 	apply plugin: "idea"
 	apply plugin: "signing"
 	apply plugin: "maven"
-	apply plugin: 'war'
+
 	eclipse {
 		jdt {
 			//if you want to alter the java versions (by default they are configured with gradle java plugin settings):
@@ -33,7 +31,7 @@ configure(allprojects) { project ->
 		targetCompatibility = JAVADOC_COMPILER_LEVEL
 		options.encoding = 'UTF-8'
 		// disable the crazy super-strict doclint tool in Java 8
-		// noinspection SpellCheckingInspection
+        // noinspection SpellCheckingInspection
 		if (JavaVersion.current().isJava8Compatible()) {
 			options.addStringOption('Xdoclint:none', '-quiet')
 		}
@@ -70,9 +68,9 @@ configure(allprojects) { project ->
 
 	repositories {
 		mavenLocal()
-		maven {
-			url "http://maven.aliyun.com/nexus/content/groups/public"
-		}
+		 maven {
+	        url "http://maven.aliyun.com/nexus/content/groups/public"
+	    }
 		maven {
 			url "https://artifacts.elastic.co/maven"
 		}
@@ -94,94 +92,86 @@ configure(allprojects) { project ->
 
 			}
 			resources {
-				srcDir 'resources'
+				// srcDir 'src/resources'
 				srcDir 'src'  exclude '**/*.java'
 			}
-			compileClasspath = configurations.compile + configurations.runtime
+			//compileClasspath = configurations.compile + configurations.runtime
 		}
 		test {
 			java {
-				srcDir 'src/test/java'
+				srcDir 'test'
 
 			}
 			resources {
-				srcDir 'src/test/resources'
-				srcDir 'src/test/java'  exclude '**/*.java'
+				srcDir 'resources'
+				// srcDir 'src/test/java'  exclude '**/*.java'
 			}
-
 		}
-
 	}
-
-
 
 	dependencies {
 		testCompile 'junit:junit:4.12'
+
 		compile  (
-				[group: 'javax.servlet', name: 'jsp-api', version: '2.0', transitive: false],
-				[group: 'javax.servlet', name: 'javax.servlet-api', version: "3.1.0", transitive: false],
-				//[group: 'servletapi', name: 'servletapi', version: '2.4', transitive: false],
-
+		 [group: 'com.bbossgroups.boot', name: 'bboot-web', version: "${bboot_version}", transitive: true]
 
 		)
-		providedCompile (
-				[group: 'javax.servlet', name: 'jsp-api', version: '2.0', transitive: false],
-				[group: 'javax.servlet', name: 'javax.servlet-api', version: "3.1.0", transitive: false],
-				[group: 'com.bbossgroups', name: 'bboss-rt', version: "${bboss_version}", transitive: false],
-				//[group: 'servletapi', name: 'servletapi', version: '2.4', transitive: false],
-		)
-
+		compile (
+         fileTree(dir: 'lib', include: '**/*.jar'),
+    	)
 		runtime(
 				[group: 'com.bbossgroups', name: 'bboss-rt', version: "${bboss_version}", transitive: false],
 		)
 	}
 
+    task releaseVersion(type: Zip,dependsOn:['copyToolFiles','copyWebrootFiles','copyResourceFiles']) {
+        //appendix = 'wrapper'
 
+       from 'build/dist/'
 
-	task copyJarFiles(type: Sync,dependsOn:'jar'){
-		from fileTree(dir: 'lib', include: '**/*.jar')
-		from configurations.compile
-		from jar.outputs
-		exclude { details -> details.file.name.startsWith('bboss-rt')  }
-		into 'build/dist/lib'
+    }
 
-	}
-
-	task copyRTJarFiles(type: Copy,dependsOn:'copyJarFiles'){
-		from configurations.runtime - configurations.compile
-		into 'build/dist'
-		rename ("bboss-rt-${bboss_version}.jar", "${project.name}-${bboss_version}.jar")
-	}
-	task copyToolFiles(type: Copy ,dependsOn:'copyRTJarFiles')  {
-		from ('runfiles')
-				{
-					expand(
-							bboss_version:"${bboss_version}",
-							project:"${project.name}",
-							vm:"-Xms512m -Xmx512m -Xmn256m -XX:PermSize=128M -XX:MaxPermSize=256M"
-					)
-
-				}
-		filteringCharset = 'UTF-8'
-		into 'build/dist/'
+    task copyJarFiles(type: Copy,dependsOn:'jar'){
+    	from fileTree(dir: 'lib', include: '**/*.jar')
+    	from configurations.compile
+    	from jar.outputs
+    	//exclude { details -> details.file.name.startsWith('bboss-rt')  }
+    	into 'build/dist/lib'
+    }
 
 
 
-	}
-	task copyResourcesfiles(type: Sync )  {
-		from fileTree(dir: 'src/test/resources')
-		filteringCharset = 'UTF-8'
-		into 'build/dist/resources'
-	}
+    task copyRTJarFiles(type: Copy,dependsOn:'copyJarFiles'){
+    	from (configurations.runtime - configurations.compile){
+			include 'bboss-rt-**.jar'
+		}
+    	into 'build/dist/'
 
-	task releaseVersion(type: Zip,dependsOn:['copyToolFiles','copyResourcesfiles']) {
+		rename ("bboss-rt-${bboss_version}.jar", "${project.name}-boot-${bboss_version}.jar")
+    }
+    task copyToolFiles(type: Copy ,dependsOn:'copyRTJarFiles')  {
+    	from ('runfiles')
+    	{
+    		expand(
+    				bboss_version:"${bboss_version}",
+    				project:"${project.name}"
+    		)
 
-		//appendix = 'wrapper'
-		classifier = 'released'
-		from 'build/dist/'
+    	}
+    	filteringCharset = 'UTF-8'
+    	into 'build/dist/'
+    }
 
-	}
-	webAppDirName = 'web'
+    task copyWebrootFiles(type: Copy ){
+    	from fileTree(dir: 'web')
+    	into 'build/dist/WebRoot'
+    }
+
+    task copyResourceFiles(type: Copy ){
+    	from fileTree(dir: 'src/test/resources')
+    	into 'build/dist/resources'
+    }
+
 }
 
 

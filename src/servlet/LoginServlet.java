@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/login_success.jsp");
         } else {
             resp.sendRedirect(req.getContextPath() + "/login_failure.jsp");
-            }
+        }
     }
 
     @Override

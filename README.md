@@ -58,3 +58,11 @@ Config     | getServletConfig
 #### 9.project
 ##### 使用servlet实现用户登录的小案例
 > 用户名admin,密码admin.登陆成功使用服务器内部转发到login_success.jsp页面,并且提示登录成功的用户名,如果登录失败,则请求重定向到login_failure.jsp页面
+
+#### Servlet高级
+1. 获取初始化参数
+在web.xml中配置Servlet时,可以配置一些初始化参数.
+而在Servlet中可以通过ServletConfig接口提供的方法取得这些参数
+2. MVC设计模式
+3. Model2简介
+4. 阶段项目
