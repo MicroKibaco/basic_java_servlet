@@ -53,7 +53,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <style type="text/css">
 	   hr{
 	     
-	     border-color:FF7F00; 
+	     border-color:#FF7F00;
 	   }
 	   
 	   div{
