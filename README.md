@@ -63,6 +63,13 @@ Config     | getServletConfig
 1. 获取初始化参数
 在web.xml中配置Servlet时,可以配置一些初始化参数.
 而在Servlet中可以通过ServletConfig接口提供的方法取得这些参数
+![Model1](./images/servelet-Model1.png)
 2. MVC设计模式
+MVC设计模式:MVC(Model,View,Controller),是软件开发过程中比较流行的设计思想,旨在f分离模型,控制,视图,是一种分层思想
+![mvc](./images/servelet-mvc.png)
 3. Model2简介
+java Web的Model2开发模式就是MVC思想的体现
+![Model1](./images/servelet-mvc-model1.png)
 4. 阶段项目
+使用servelet技术实现购物车的效果
+![shopping](./images/servelet-shopping.png)

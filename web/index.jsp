@@ -25,5 +25,10 @@
   <form action="servlet/CustomServletLifeCycle" method="post">
     <input type="submit" value="Post方式请求CustomServletLifeCycle"/>
   </form>
+
+  <a href="servlet/GetInitParameterServlet">Get方式请求CustomServletLifeCycle</a><br>
+  <form action="servlet/GetInitParameterServlet" method="post">
+    <input type="submit" value="Post方式请求GetInitParameterServlet"/>
+  </form>
   </body>
 </html>
